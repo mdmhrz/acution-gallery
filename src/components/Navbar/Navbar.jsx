@@ -3,9 +3,15 @@ import React from 'react';
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar bg-base-100 shadow-sm px-10">
-                <div className="flex-1">
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+            <div className="navbar bg-base-100 shadow-sm px-10 flex justify-between">
+                <div className="">
+                    <a className="text-xl text-[#003EA4]">Auction<span className='text-yellow-500 font-bold'>Gallery</span></a>
+                </div>
+                <div className='flex gap-10'>
+                    <a href="">Home</a>
+                    <a href="">Auction</a>
+                    <a href="">Categories</a>
+                    <a href="">How to works</a>
                 </div>
                 <div className="flex-none">
                     <div className="dropdown dropdown-end">
