@@ -35,7 +35,7 @@ const Auctions = () => {
                     <tr>
                         <td>Row 2, Cell 1</td>
                         <td>Row 2, Cell 2</td>
-                        <td>Row 2, Cell 3</td>
+                        <td>Row 2, asdfsadCell 3</td>
                     </tr>
                 </tbody>
             </table>
