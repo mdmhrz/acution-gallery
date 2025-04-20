@@ -1,0 +1,65 @@
+  [
+    {
+      "id": 1,
+      "title": "Vintage Leica M3 Camera",
+      "description": "Classic 35mm film camera loved by professional photographers.",
+      "currentBidPrice": 2850,
+      "timeLeft": "2 Days",
+      "bidsCount": 14,
+      "image": "../src/assets/camera.png"
+    },
+    {
+      "id": 2,
+      "title": "1965 Gibson SG Standard Electric Guitar",
+      "description": "Vintage electric guitar known for its powerful tone and lightweight design.",
+      "currentBidPrice": 2850,
+      "timeLeft": "2 Days",
+      "bidsCount": 11,
+      "image": "../src/assets/givson.png"
+    },
+    {
+      "id": 3,
+      "title": "Original Apple Macintosh 128K (1984)",
+      "description": "Apple\u2019s first mass-market personal computer with a graphical interface.",
+      "currentBidPrice": 2850,
+      "timeLeft": "2 Days",
+      "bidsCount": 17,
+      "image": "../src/assets/laptop.png"
+    },
+    {
+      "id": 4,
+      "title": "Rolex Submariner 16610",
+      "description": "A timeless and durable diving watch from Rolex, highly collectible.",
+      "currentBidPrice": 2850,
+      "timeLeft": "2 Days",
+      "bidsCount": 19,
+      "image": "../src/assets/watch.png"
+    },
+    {
+      "id": 5,
+      "title": "First Edition 'The Great Gatsby' by F. Scott Fitzgerald",
+      "description": "Rare collectible of the American literary classic in its first edition.",
+      "currentBidPrice": 2850,
+      "timeLeft": "2 Days",
+      "bidsCount": 8,
+      "image": "../src/assets/book.png"
+    },
+    {
+      "id": 6,
+      "title": "Mid\u2013Century Modern Eames Lounge Chair",
+      "description": "Iconic lounge chair designed for comfort and style, mid-century modern piece.",
+      "currentBidPrice": 2850,
+      "timeLeft": "2 Days",
+      "bidsCount": 13,
+      "image": "../src/assets/chair.png"
+    },
+    {
+      "id": 7,
+      "title": "Banksy Original Screen Print",
+      "description": "Original work by Banksy, the elusive street artist known worldwide.",
+      "currentBidPrice": 2850,
+      "timeLeft": "2 Days",
+      "bidsCount": 22,
+      "image": "../src/assets/flower.png"
+    }
+  ]
