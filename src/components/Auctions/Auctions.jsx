@@ -13,7 +13,7 @@ const Auctions = () => {
 
     return (
         <div className='p-8'>
-           <div className='border-2 rounded-xl'>
+           <div className='border-2 border-gray-500 rounded-xl'>
            <table className='p-5 w-full'>
                 <thead>
                     <tr>
