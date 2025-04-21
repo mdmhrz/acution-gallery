@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 
-const Auctions = () => {
+const Auctions = ({handleAddToFav}) => {
     const [items, setItem] = useState([])
 
     useEffect(() => {
@@ -25,7 +25,7 @@ const Auctions = () => {
                 </thead>
                 <tbody>
                     {
-                        items.map((item) => <Product key={item.id} item={item} ></Product>)
+                        items.map((item) => <Product key={item.id} item={item} handleAddToFav={handleAddToFav} ></Product>)
                     }
                 </tbody>
         </table>

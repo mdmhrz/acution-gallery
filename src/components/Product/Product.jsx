@@ -3,8 +3,8 @@ import { CiHeart } from "react-icons/ci";
 
 
 
-const Product = ({item}) => {
-    console.log(item);
+const Product = ({item, handleAddToFav}) => {
+
     return (
 
 
@@ -15,7 +15,7 @@ const Product = ({item}) => {
                 </td>
                 <td><h3>${item.currentBidPrice}</h3></td>
                 <td><h3>{item.timeLeft}</h3></td>
-                <td className='text-center align-middle'> <CiHeart className='inline-block text-2xl hover:scale-[1.2] transition-all' /></td>
+                <td className='text-center align-middle'> <CiHeart onClick={()=>handleAddToFav(item)} className='inline-block text-2xl hover:scale-[1.2] transition-all cursor-pointer' /></td>
         </tr>
 
         
