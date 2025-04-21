@@ -6,7 +6,7 @@
       "currentBidPrice": 2850,
       "timeLeft": "2 Days",
       "bidsCount": 14,
-      "image": "../src/assets/camera.png"
+      "image": "https://i.ibb.co.com/mCfHd8tp/camera.png"
     },
     {
       "id": 2,
@@ -15,7 +15,7 @@
       "currentBidPrice": 2850,
       "timeLeft": "2 Days",
       "bidsCount": 11,
-      "image": "../src/assets/givson.png"
+      "image": "https://i.ibb.co.com/ksYWbTKt/givson.png"
     },
     {
       "id": 3,
@@ -24,7 +24,7 @@
       "currentBidPrice": 2850,
       "timeLeft": "2 Days",
       "bidsCount": 17,
-      "image": "../src/assets/laptop.png"
+      "image": "https://i.ibb.co.com/LdkZTNb6/laptop.png"
     },
     {
       "id": 4,
@@ -33,7 +33,7 @@
       "currentBidPrice": 2850,
       "timeLeft": "2 Days",
       "bidsCount": 19,
-      "image": "../src/assets/watch.png"
+      "image": "https://i.ibb.co.com/sJyShVDv/watch.png"
     },
     {
       "id": 5,
@@ -42,7 +42,7 @@
       "currentBidPrice": 2850,
       "timeLeft": "2 Days",
       "bidsCount": 8,
-      "image": "../src/assets/book.png"
+      "image": "https://i.ibb.co.com/vxYD9B5T/book.png"
     },
     {
       "id": 6,
@@ -51,7 +51,7 @@
       "currentBidPrice": 2850,
       "timeLeft": "2 Days",
       "bidsCount": 13,
-      "image": "../src/assets/chair.png"
+      "image": "https://i.ibb.co.com/wh2zXWRc/chair.png"
     },
     {
       "id": 7,
@@ -60,6 +60,6 @@
       "currentBidPrice": 2850,
       "timeLeft": "2 Days",
       "bidsCount": 22,
-      "image": "../src/assets/flower.png"
+      "image": "https://i.ibb.co.com/S7VL7wQc/flower.png"
     }
   ]
