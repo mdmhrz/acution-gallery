@@ -7,7 +7,7 @@ const Product = ({item}) => {
     return (
 
 
-        <tr className='border-b border-gray-200 text-center'>
+        <tr className='border-t-2 border-black text-center'>
                 <td className='flex gap-4 items-center p-5'>
                     <img className='w-16 h-16' src={item.image} alt="" />
                     <h3 className='font-semibold'>{item.title}</h3> 

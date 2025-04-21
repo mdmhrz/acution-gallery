@@ -12,8 +12,10 @@ const Auctions = () => {
 
 
     return (
-        <table className='w-full rounded-xl'>
-                <thead className='border-b border-gray-200'>
+        <div className='p-8'>
+           <div className='border-2 rounded-xl'>
+           <table className='p-5 w-full'>
+                <thead>
                     <tr>
                         <th className='p-5 text-left'>Items</th>
                         <th className='p-5 text-center'>Current Bid</th>
@@ -26,7 +28,9 @@ const Auctions = () => {
                         items.map((item) => <Product key={item.id} item={item} ></Product>)
                     }
                 </tbody>
-            </table>
+        </table>
+           </div>
+        </div>
     );
 };
 
