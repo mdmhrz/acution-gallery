@@ -34,8 +34,8 @@ function App() {
 
                 {/* Total of Fav items */}
                 <div className='flex items-center justify-between'>
-                  <h3 className='font-semibold' >Total Bids Amount:</h3>
-                  <h3 className='font-semibold'>$0</h3>
+                  <h3 className='font-bold' >Total Bids Amount:</h3>
+                  <h3 className='font-bold'>$0</h3>
                 </div>
 
             </div>

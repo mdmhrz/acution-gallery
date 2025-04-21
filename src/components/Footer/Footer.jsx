@@ -13,6 +13,7 @@ const Footer = () => {
                     <a className="link link-hover font-semibold">Won.</a>
                 </nav>
                 <div className='flex gap-10'>
+                    <a href="">About Us</a>
                     <a href="">Home</a>
                     <a href="">Auction</a>
                     <a href="">Categories</a>
