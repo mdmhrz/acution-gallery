@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaHeart } from "react-icons/fa";
+import { CiHeart } from "react-icons/ci";
+
 
 
 const Product = ({item}) => {
@@ -14,7 +15,7 @@ const Product = ({item}) => {
                 </td>
                 <td><h3>${item.currentBidPrice}</h3></td>
                 <td><h3>{item.timeLeft}</h3></td>
-                <td><i class="fa-solid fa-heart hover:scale-[1.2] transition-all  "></i></td>
+                <td className='text-center align-middle'> <CiHeart className='inline-block text-2xl hover:scale-[1.2] transition-all' /></td>
         </tr>
 
         
