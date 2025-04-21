@@ -10,7 +10,20 @@ function App() {
     <>
      <Navbar></Navbar>
      <Banner></Banner>
-     <Auctions></Auctions>
+
+     <div className="auction-container bg-gray-100 px-20 py-20">
+        <h1 className='text-2xl font-semibold mb-3'>Active Auctions</h1>
+        <p className='mb-4'>Discover and bid on extraordinary items</p>
+        <div className='flex gap-10'>
+            <div className="active-auctions bg-white rounded-xl w-[70%]">
+                <Auctions></Auctions>
+            </div>
+            <div className="fav-items  bg-white rounded-xl w-[30%]">
+                <h1>Favorite Items</h1>
+            </div>
+        </div>
+     </div>
+     
      <Footer></Footer>      
     </>
   )

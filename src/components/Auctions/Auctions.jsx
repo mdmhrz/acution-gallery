@@ -12,41 +12,21 @@ const Auctions = () => {
 
 
     return (
-        <div className='px-20 py-20' >
-
-            <h1 className='text-2xl font-semibold mb-4'>Active Auctions</h1>
-            <p>Discover and bid on extraordinary items</p>
-
-            <table>
-                <thead>
+        <table className='w-full rounded-xl'>
+                <thead className='border-b border-gray-200'>
                     <tr>
-                        <th>Items</th>
-                        <th>Current Bid</th>
-                        <th>Time Left</th>
-                        <th>Bid Now</th>
+                        <th className='p-5 text-left'>Items</th>
+                        <th className='p-5 text-center'>Current Bid</th>
+                        <th className='p-5 text-center'>Time Left</th>
+                        <th className='p-5 text-center'>Bid Now</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Row 1, Cell 1</td>
-                        <td>Row 1, Cell 2</td>
-                        <td>Row 1, Cell 3</td>
-                    </tr>
-                    <tr>
-                        <td>Row 2, Cell 1</td>
-                        <td>Row 2, Cell 2</td>
-                        <td>Row 2, asdfsadCell 3</td>
-                    </tr>
+                    {
+                        items.map((item) => <Product key={item.id} item={item} ></Product>)
+                    }
                 </tbody>
             </table>
-
-            <div className="auction-itmes">
-                {
-                    items.map((item) => <Product key={item.id} item={item} ></Product>)
-                }
-            </div>
-
-        </div>
     );
 };
 
