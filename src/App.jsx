@@ -4,17 +4,20 @@ import Auctions from './components/Auctions/Auctions'
 import Banner from './components/Banner/Banner'
 import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
-import { RxCross2 } from "react-icons/rx";
+import AddToCart from './components/AddToCart/AddToCart'
+import { CiHeart } from "react-icons/ci";
+
 
 
 function App() {
   const [favorite, setFaborite] = useState([]);
 
   const handleAddToFav = (item) => {
-    setFaborite(item);
+    setFaborite([...favorite, item]);
   }
 
-  console.log(favorite);
+  
+
 
 
 
@@ -39,7 +42,7 @@ function App() {
           <div className="fav-items p-5 mb-4  bg-white rounded-xl w-[30%]">
             {/* Fav items Heading */}
             <div className='border-b-2 border-gray-400'>
-              <h1 className='text-center text-[20px]  font-semibold mb-3 text-blue-500'> <i class="fa-solid fa-heart"></i>  Favorite Items</h1>
+              <h1 className='text-center text-[20px]  font-semibold mb-3 text-blue-500'><CiHeart />  Favorite Items</h1>
             </div>
 
             {/* Selected Fav Items */}
@@ -48,16 +51,10 @@ function App() {
               <p className='text-[0.9rem]'>Click the heart icon on any items to add in to your favorites</p>
 
               {/* Added fav. itmes */}
-              <div className='flex gap-5 p-4 items-center rounded-md border' >
-                <div>
-                    <img className='w-24' src={favorite.image} alt="" />
-                </div>
-                <div className='text-left' >
-                    <h1 className='font-semibold'>{favorite.title}</h1>
-                    <p>$ {favorite.currentBidPrice}</p>
-                    <p>Bids: {favorite.bidsCount}</p>
-                </div>
-
+              <div>
+                {
+                  favorite.map((singleItem) => <AddToCart singleItem={singleItem} key={singleItem.id}></AddToCart>)
+                }
               </div>
 
             </div>
