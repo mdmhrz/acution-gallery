@@ -11,18 +11,17 @@ import NoItemsSelected from './components/NoItemsSelected/NoItemsSelected'
 
 
 function App() {
-  const [favorite, setFaborite] = useState([]);
+  const [favorite, setFavorite] = useState([]);
+
+  const [totalAmount, setTotalAmount] = useState(0);
+  const [isFav, setIsFav] = useState(false);
 
   const handleAddToFav = (item) => {
-    setFaborite([...favorite, item]);
+    setFavorite([...favorite, item]);
+    setTotalAmount(totalAmount+item.currentBidPrice);
+    setIsFav(!isFav);
+    
   }
-
-  
-
-
-
-
-
 
 
 
@@ -36,14 +35,14 @@ function App() {
         <p className='mb-4'>Discover and bid on extraordinary items</p>
         <div className='flex items-start  gap-10'>
           <div className="active-auctions bg-white rounded-xl w-[70%]">
-            <Auctions handleAddToFav={handleAddToFav} ></Auctions>
+            <Auctions handleAddToFav={handleAddToFav} isFav={isFav} ></Auctions>
           </div>
 
           {/* Right side for Fav Items */}
           <div className="fav-items p-5 mb-4  bg-white rounded-xl w-[30%]">
             {/* Fav items Heading */}
             <div className='border-b-2 border-gray-400'>
-              <h1 className='text-center text-[20px]  font-semibold mb-3 text-blue-500'><CiHeart />  Favorite Items</h1>
+              <h1 className='text-center text-[20px]  font-semibold mb-3 text-blue-500 align-middle'><CiHeart className='inline-block size-6' />  Favorite Items</h1>
             </div>
 
             {/* Selected Fav Items */}
@@ -52,11 +51,12 @@ function App() {
               
             </div>
               {/* Added fav. itmes */}
-              
-              <NoItemsSelected></NoItemsSelected>
+                            
               <div>
                 {
-                  favorite.map((singleItem) => <AddToCart singleItem={singleItem} key={singleItem.id}></AddToCart>)
+                  favorite.length===0?(<NoItemsSelected></NoItemsSelected>):(
+                    favorite.map((singleItem) => <AddToCart singleItem={singleItem} key={singleItem.id}></AddToCart>)
+                  )
                 }
               </div>
 
@@ -65,7 +65,7 @@ function App() {
             {/* Total of Fav items */}
             <div className='flex items-center justify-between'>
               <h3 className='font-bold' >Total Bids Amount:</h3>
-              <h3 className='font-bold'>$0</h3>
+              <h3 className='font-bold'>${totalAmount}</h3>
             </div>
 
           </div>
