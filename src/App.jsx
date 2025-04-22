@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
 import AddToCart from './components/AddToCart/AddToCart'
 import { CiHeart } from "react-icons/ci";
+import NoItemsSelected from './components/NoItemsSelected/NoItemsSelected'
 
 
 
@@ -47,10 +48,12 @@ function App() {
 
             {/* Selected Fav Items */}
             <div className='border-b-2 mb-4 border-gray-400 py-5 text-center'>
-              <h3 className='font-semibold' >No Favorites yet</h3>
-              <p className='text-[0.9rem]'>Click the heart icon on any items to add in to your favorites</p>
-
+            <div>
+              
+            </div>
               {/* Added fav. itmes */}
+              
+              <NoItemsSelected></NoItemsSelected>
               <div>
                 {
                   favorite.map((singleItem) => <AddToCart singleItem={singleItem} key={singleItem.id}></AddToCart>)
