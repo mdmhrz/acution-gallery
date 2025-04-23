@@ -24,8 +24,15 @@ function App() {
 
   const handleRemoveItem = (id) => {
     const remainingProduct = favorite.filter((clicked)=> clicked.id !== id);
-    setFavorite(remainingProduct)
+    setFavorite(remainingProduct);
+    console.log(id);
+    
+    
   }
+
+  
+  
+  
 
 
 
