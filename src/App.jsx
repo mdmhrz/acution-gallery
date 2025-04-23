@@ -20,7 +20,11 @@ function App() {
     setFavorite([...favorite, item]);
     setTotalAmount(totalAmount+item.currentBidPrice);
     setIsFav(!isFav);
-    
+  }
+
+  const handleRemoveItem = (id) => {
+    const remainingProduct = favorite.filter((clicked)=> clicked.id !== id);
+    setFavorite(remainingProduct)
   }
 
 
@@ -54,7 +58,7 @@ function App() {
               <div>
                 {
                   favorite.length===0?(<NoItemsSelected></NoItemsSelected>):(
-                    favorite.map((singleItem) => <AddToCart singleItem={singleItem} key={singleItem.id}></AddToCart>)
+                    favorite.map((singleItem) => <AddToCart handleRemoveItem={handleRemoveItem} singleItem={singleItem} key={singleItem.id}></AddToCart>)
                   )
                 }
               </div>
