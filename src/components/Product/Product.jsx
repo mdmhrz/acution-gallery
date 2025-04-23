@@ -18,7 +18,6 @@ const Product = ({item, handleAddToFav, isFav}) => {
                 <td><h3>{item.timeLeft}</h3></td>
                 <td className='text-center align-middle'> <CiHeart onClick={()=>handleAddToFav(item)} className={`inline-block text-2xl hover:scale-[1.2] transition-all cursor-pointer ${ isFav ? 'text-red-500' : 'text-blue-500'}`} /></td>
         </tr>
-
         
     );
 };

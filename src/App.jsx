@@ -29,7 +29,6 @@ function App() {
     <>
       <Navbar></Navbar>
       <Banner></Banner>
-
       <div className="auction-container bg-gray-100 px-20 py-20">
         <h1 className='text-2xl font-semibold mb-3'>Active Auctions</h1>
         <p className='mb-4'>Discover and bid on extraordinary items</p>
@@ -71,7 +70,6 @@ function App() {
           </div>
         </div>
       </div>
-
       <Footer></Footer>
     </>
   )
