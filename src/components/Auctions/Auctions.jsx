@@ -17,10 +17,10 @@ const Auctions = ({ handleAddToFav, favorite }) => {
                 <table className='p-5 w-full'>
                     <thead>
                         <tr>
-                            <th className='p-5 text-left'>Items</th>
-                            <th className='p-5 text-center'>Current Bid</th>
-                            <th className='p-5 text-center'>Time Left</th>
-                            <th className='p-5 text-center'>Bid Now</th>
+                            <th className='p-5 text-left'> Items</th>
+                            <th className='p-5 text-center'>💰 Current Bid</th>
+                            <th className='p-5 text-center'>⏳ Time Left</th>
+                            <th className='p-5 text-center'>❤️ Bid Now</th>
                         </tr>
                     </thead>
                     <tbody>
