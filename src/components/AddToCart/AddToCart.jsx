@@ -13,7 +13,7 @@ const AddToCart = ({singleItem, handleRemoveItem}) => {
                 <p>$ {singleItem.currentBidPrice}</p>
                 <p>Bids: {singleItem.bidsCount}</p>
             </div>
-            <RxCross2 onClick={()=>handleRemoveItem(singleItem.id)} className='absolute right-4 cursor-pointer hover:scale-[1.3]' />
+            <RxCross2 onClick={()=>handleRemoveItem(singleItem.id, singleItem.currentBidPrice)} className='absolute right-4 cursor-pointer hover:scale-[1.3]' />
 
         </div>
     );

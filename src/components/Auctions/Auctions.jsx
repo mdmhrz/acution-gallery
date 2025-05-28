@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 
-const Auctions = ({handleAddToFav, isFav}) => {
+const Auctions = ({ handleAddToFav, isFav }) => {
     const [items, setItem] = useState([])
 
     useEffect(() => {
@@ -13,23 +13,24 @@ const Auctions = ({handleAddToFav, isFav}) => {
 
     return (
         <div className='p-8'>
-           <div className='border-2 border-gray-500 rounded-xl'>
-           <table className='p-5 w-full'>
-                <thead>
-                    <tr>
-                        <th className='p-5 text-left'>Items</th>
-                        <th className='p-5 text-center'>Current Bid</th>
-                        <th className='p-5 text-center'>Time Left</th>
-                        <th className='p-5 text-center'>Bid Now</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        items.map((item) => <Product key={item.id} item={item} handleAddToFav={handleAddToFav} isFav={isFav} ></Product>)
-                    }
-                </tbody>
-        </table>
-           </div>
+            <div className='border-2 border-gray-500 rounded-xl'>
+                <table className='p-5 w-full'>
+                    <thead>
+                        <tr>
+                            <th className='p-5 text-left'>Items</th>
+                            <th className='p-5 text-center'>Current Bid</th>
+                            <th className='p-5 text-center'>Time Left</th>
+                            <th className='p-5 text-center'>Bid Now</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            items.map((item) => <Product key={item.id} item={item} handleAddToFav={handleAddToFav} isFav={isFav} ></Product>)
+                        }
+                    </tbody>
+                    
+                </table>
+            </div>
         </div>
     );
 };

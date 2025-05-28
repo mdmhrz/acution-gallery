@@ -22,15 +22,12 @@ function App() {
     setIsFav(!isFav);
   }
 
-  const handleRemoveItem = (id) => {
+  const handleRemoveItem = (id, price) => {
     const remainingProduct = favorite.filter((clicked)=> clicked.id !== id);
     setFavorite(remainingProduct);
-    console.log(id);
-    
+    setTotalAmount(totalAmount - price)
     
   }
-
-  
   
   
 
