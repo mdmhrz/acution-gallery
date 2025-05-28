@@ -15,24 +15,22 @@ function App() {
   const [favorite, setFavorite] = useState([]);
 
   const [totalAmount, setTotalAmount] = useState(0);
-  const [isFav, setIsFav] = useState(false);
 
   const handleAddToFav = (item) => {
     setFavorite([...favorite, item]);
-    setTotalAmount(totalAmount+item.currentBidPrice);
-    setIsFav(!isFav);
-    toast.success("Added to fav.")
+    setTotalAmount(totalAmount + item.currentBidPrice);
+    toast.success("Added to favorite")
 
   }
 
   const handleRemoveItem = (id, price) => {
-    const remainingProduct = favorite.filter((clicked)=> clicked.id !== id);
+    const remainingProduct = favorite.filter((clicked) => clicked.id !== id);
     setFavorite(remainingProduct);
-    setTotalAmount(totalAmount - price)
-    
+    setTotalAmount(totalAmount - price);
+    toast.warn('Removed from favorite');
   }
-  
-  
+
+
 
 
 
@@ -45,7 +43,7 @@ function App() {
         <p className='mb-4'>Discover and bid on extraordinary items</p>
         <div className='flex items-start  gap-10'>
           <div className="active-auctions bg-white rounded-xl w-[70%]">
-            <Auctions handleAddToFav={handleAddToFav} isFav={isFav} favorite={favorite} ></Auctions>
+            <Auctions handleAddToFav={handleAddToFav} favorite={favorite} ></Auctions>
           </div>
 
           {/* Right side for Fav Items */}
@@ -57,14 +55,14 @@ function App() {
 
             {/* Selected Fav Items */}
             <div className='border-b-2 mb-4 border-gray-400 py-5 text-center'>
-            <div>
-              
-            </div>
+              <div>
+
+              </div>
               {/* Added fav. itmes */}
-                            
+
               <div>
                 {
-                  favorite.length===0?(<NoItemsSelected></NoItemsSelected>):(
+                  favorite.length === 0 ? (<NoItemsSelected></NoItemsSelected>) : (
                     favorite.map((singleItem) => <AddToCart handleRemoveItem={handleRemoveItem} singleItem={singleItem} key={singleItem.id}></AddToCart>)
                   )
                 }

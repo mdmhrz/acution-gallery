@@ -20,7 +20,7 @@ const Footer = () => {
                     <a href="">How to works</a>
                 </div>
                 <aside>
-                    <p>Copyright © {new Date().getFullYear()} - AuctionHub. All rights reserved.</p>
+                    <p className='text-[12px]'>Copyright © {new Date().getFullYear()} - AuctionHub. All rights reserved.</p>
                 </aside>
             </footer>
         </div>
