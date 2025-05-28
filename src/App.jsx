@@ -7,6 +7,7 @@ import Navbar from './components/Navbar/Navbar'
 import AddToCart from './components/AddToCart/AddToCart'
 import { CiHeart } from "react-icons/ci";
 import NoItemsSelected from './components/NoItemsSelected/NoItemsSelected'
+import { toast } from 'react-toastify'
 
 
 
@@ -20,6 +21,8 @@ function App() {
     setFavorite([...favorite, item]);
     setTotalAmount(totalAmount+item.currentBidPrice);
     setIsFav(!isFav);
+    toast.success("Added to fav.")
+
   }
 
   const handleRemoveItem = (id, price) => {
@@ -42,7 +45,7 @@ function App() {
         <p className='mb-4'>Discover and bid on extraordinary items</p>
         <div className='flex items-start  gap-10'>
           <div className="active-auctions bg-white rounded-xl w-[70%]">
-            <Auctions handleAddToFav={handleAddToFav} isFav={isFav} ></Auctions>
+            <Auctions handleAddToFav={handleAddToFav} isFav={isFav} favorite={favorite} ></Auctions>
           </div>
 
           {/* Right side for Fav Items */}

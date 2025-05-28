@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 
-const Auctions = ({ handleAddToFav, isFav }) => {
+const Auctions = ({ handleAddToFav, isFav, favorite }) => {
     const [items, setItem] = useState([])
 
     useEffect(() => {
@@ -25,7 +25,7 @@ const Auctions = ({ handleAddToFav, isFav }) => {
                     </thead>
                     <tbody>
                         {
-                            items.map((item) => <Product key={item.id} item={item} handleAddToFav={handleAddToFav} isFav={isFav} ></Product>)
+                            items.map((item) => <Product favorite={favorite} key={item.id} item={item} handleAddToFav={handleAddToFav} isFav={isFav} ></Product>)
                         }
                     </tbody>
                     
